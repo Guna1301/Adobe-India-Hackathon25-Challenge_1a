@@ -13,8 +13,8 @@ def process_pdf(pdf_path, output_path):
     write_json(output_path, title, outline)
 
 def main():
-    input_dir = "input"
-    output_dir = "output"
+    input_dir = "/app/input"
+    output_dir = "/app/output"
     os.makedirs(output_dir, exist_ok=True)
 
     for filename in os.listdir(input_dir):
