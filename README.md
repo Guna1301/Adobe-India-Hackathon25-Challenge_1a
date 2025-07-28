@@ -32,7 +32,7 @@ I built a clean modular pipeline with the following key files:
 | ----------------------- | ------------------------------------------------------------------ |
 | `pdf_loader.py`         | Loads PDF and extracts raw text + layout                           |
 | `heading_extractor.py`  | Detects potential headings based on layout and font heuristics     |
-| `heading_classifier.py` | Uses rules or ML to classify which blocks are real headings        |
+| `heading_classifier.py` | Uses rules to classify which blocks are real headings        |
 | `title_detector.py`     | Identifies the main document title                                 |
 | `json_writer.py`        | Combines outputs and saves as structured JSON                      |
 | `process_pdfs.py`       | Orchestrates the above to process all PDFs                         |
@@ -40,7 +40,7 @@ I built a clean modular pipeline with the following key files:
 
 ---
 
-## 🔍 Techniques Used
+## Techniques Used
 
 * **PyMuPDF (fitz)** for fine-grained layout parsing (bbox, font size, bold)
 * **Heuristic heading detection** using font size, bold, and position
@@ -99,7 +99,7 @@ docker run --rm -v "$PWD/input:/app/input" -v "$PWD/output:/app/output" adobe-pd
 
 ---
 
-## 📈 Accuracy Checking
+## Accuracy Checking
 
 We use a custom script to compare:
 
