@@ -207,8 +207,6 @@ def evaluate_folder(expected_dir, executed_dir):
     else:
         print("No matching files found.")
 
-if __name__ == "__main__":
 
-    expected_dir = "expectedoutputs"
-    executed_dir = "output"
-    evaluate_folder(expected_dir, executed_dir)
+
+    
