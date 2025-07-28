@@ -69,12 +69,12 @@ def evaluate_folder(expected_dir, actual_dir):
         else:
             print(f"[!] Missing expected file for: {name}")
 
-    print("\n📄 Per File Accuracy:")
+    print("\nPer File Accuracy:")
     for r in results:
         print(f"{r['file']}: Title = {r['title_accuracy']}%, Outline = {r['outline_accuracy']}%, Overall = {r['overall_accuracy']}%")
 
     if count > 0:
-        print("\n📊 Average Accuracy:")
+        print("\n Average Accuracy:")
         print(f"Title Accuracy:   {round(total['title'] / count, 2)}%")
         print(f"Outline Accuracy: {round(total['outline'] / count, 2)}%")
         print(f"Overall Accuracy: {round(total['overall'] / count, 2)}%")
